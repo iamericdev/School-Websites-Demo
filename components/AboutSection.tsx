@@ -1,57 +1,47 @@
-import React from "react";
-import library from "../assets/library.png";
-import grad from "../assets/grad.jpg";
-import student from "../assets/student.jpg";
-import classroom from "../assets/classroom.png";
+
+import React from 'react';
 
 export const AboutSection: React.FC = () => {
   const cards = [
     {
-      title: "Classroom",
-      image: classroom,
+      title: 'Classroom',
+      image: 'https://images.unsplash.com/photo-1524178232363-1fb28f74b0cd?auto=format&fit=crop&q=80&w=800'
     },
     {
-      title: "Campus",
-      image: student,
+      title: 'Campus',
+      image: 'https://images.unsplash.com/photo-1541339907198-e08756ebafe3?auto=format&fit=crop&q=80&w=800'
     },
     {
-      title: "Graduation",
-      image: grad,
+      title: 'Graduation',
+      image: 'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&q=80&w=800'
     },
     {
-      title: "Library",
-      image: library,
-    },
+      title: 'Library',
+      image: 'https://images.unsplash.com/photo-1507738911731-d72ad7ec88fd?auto=format&fit=crop&q=80&w=800'
+    }
   ];
 
   return (
     <section className="bg-[#a6192e] py-20 px-4 md:px-12">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12">
+        
         {/* Sidebar & Quote Column */}
         <div className="lg:col-span-5 relative">
           <div className="absolute left-0 top-0">
-            <p className="text-white/40 text-xs font-bold tracking-[0.3em] uppercase [writing-mode:vertical-lr] mb-8">
-              ABOUT UNIVERSITY
-            </p>
+             <p className="text-white/40 text-xs font-bold tracking-[0.3em] uppercase [writing-mode:vertical-lr] mb-8">
+               ABOUT UNIVERSITY
+             </p>
           </div>
-
+          
           <div className="pl-12 lg:pl-16">
             <h2 className="text-white text-4xl md:text-5xl font-bold leading-tight mb-20 max-w-lg">
               EDUCATION IS NOT PREPARATION FOR LIFE; EDUCATION IS LIFE ITSELF
             </h2>
-
+            
             {/* Abstract Decorative Element */}
             <div className="hidden lg:block">
-              <svg
-                width="200"
-                height="400"
-                viewBox="0 0 200 400"
-                className="opacity-20 stroke-white fill-none"
-              >
-                <path
-                  d="M10,10 Q100,50 10,100 Q100,150 10,200 Q100,250 10,300 Q100,350 10,390"
-                  strokeWidth="2"
-                />
+              <svg width="200" height="400" viewBox="0 0 200 400" className="opacity-20 stroke-white fill-none">
+                <path d="M10,10 Q100,50 10,100 Q100,150 10,200 Q100,250 10,300 Q100,350 10,390" strokeWidth="2" />
               </svg>
             </div>
           </div>
@@ -60,12 +50,12 @@ export const AboutSection: React.FC = () => {
         {/* Image Grid Column */}
         <div className="lg:col-span-7 grid grid-cols-1 md:grid-cols-2 gap-6">
           {cards.map((card, idx) => (
-            <div
-              key={idx}
-              className={`relative group rounded-[2rem] overflow-hidden aspect-[4/5] shadow-lg transform transition-transform duration-300 hover:-translate-y-2 ${idx % 2 !== 0 ? "md:mt-12" : ""}`}
+            <div 
+              key={idx} 
+              className={`relative group rounded-[2rem] overflow-hidden aspect-[4/5] shadow-lg transform transition-transform duration-300 hover:-translate-y-2 ${idx % 2 !== 0 ? 'md:mt-12' : ''}`}
             >
-              <img
-                src={card.image}
+              <img 
+                src={card.image} 
                 alt={card.title}
                 className="w-full h-full object-cover brightness-75 group-hover:brightness-90 transition-all duration-500"
               />

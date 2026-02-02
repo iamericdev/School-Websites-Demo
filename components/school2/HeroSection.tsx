@@ -1,17 +1,17 @@
-import React from "react";
-import hero2 from "../../assets/hero2.png";
+
+import React from 'react';
 
 export const HeroSection: React.FC = () => {
   return (
     <div className="relative">
       <div className="h-[400px] md:h-[550px] w-full relative overflow-hidden">
-        <img
-          src={hero2}
-          alt="UGC Students"
-          className="w-full h-full object-cover object-[center_0px]"
+        <img 
+          src="https://images.unsplash.com/photo-1541339907198-e08756ebafe3?auto=format&fit=crop&q=80&w=1600" 
+          alt="JCT Students"
+          className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-black/10"></div>
-
+        
         {/* Overlays */}
         <div className="absolute inset-x-0 bottom-[15%] flex flex-col items-center">
           <div className="bg-[#002147] text-white px-8 md:px-16 py-3 md:py-4 shadow-2xl">
@@ -21,7 +21,7 @@ export const HeroSection: React.FC = () => {
           </div>
           <div className="bg-[#e31e24] text-white px-6 md:px-12 py-2 mt-2 shadow-xl skew-x-[-10deg]">
             <p className="text-xs md:text-base font-bold uppercase tracking-wider skew-x-[10deg] text-center">
-              More than 50 companies recruited from UGC in 2018
+              More than 50 companies recruited from JCT in 2018
             </p>
           </div>
         </div>
@@ -33,15 +33,9 @@ export const HeroSection: React.FC = () => {
           Recent Updates:
         </span>
         <div className="flex space-x-4 animate-marquee whitespace-nowrap text-white/80 text-[10px] uppercase font-medium">
-          <span>
-            Zoho / Infosys / Wipro / Mahindra Automotives / Tata Motors /
-            Hindustan Unilever / Apollo / Indian Oil Corporation / Bharat
-          </span>
+          <span>Zoho / Infosys / Wipro / Mahindra Automotives / Tata Motors / Hindustan Unilever / Apollo / Indian Oil Corporation / Bharat</span>
           <span className="opacity-0">. . . . .</span>
-          <span>
-            Zoho / Infosys / Wipro / Mahindra Automotives / Tata Motors /
-            Hindustan Unilever / Apollo / Indian Oil Corporation / Bharat
-          </span>
+          <span>Zoho / Infosys / Wipro / Mahindra Automotives / Tata Motors / Hindustan Unilever / Apollo / Indian Oil Corporation / Bharat</span>
         </div>
       </div>
       <style>{`

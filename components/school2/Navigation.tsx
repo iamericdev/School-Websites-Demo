@@ -1,16 +1,17 @@
-import React from "react";
+
+import React from 'react';
 
 export const Navigation: React.FC = () => {
   const links = [
-    { name: "Home", active: true },
-    { name: "About UGC" },
-    { name: "Admission" },
-    { name: "Departments" },
-    { name: "Research" },
-    { name: "Training & Placement" },
-    { name: "Life@UGC" },
-    { name: "Approvals" },
-    { name: "Quick Links" },
+    { name: 'Home', active: true },
+    { name: 'About JCT' },
+    { name: 'Admission' },
+    { name: 'Departments' },
+    { name: 'Research' },
+    { name: 'Training & Placement' },
+    { name: 'Life@JCT' },
+    { name: 'Approvals' },
+    { name: 'Quick Links' },
   ];
 
   return (
@@ -21,7 +22,7 @@ export const Navigation: React.FC = () => {
             key={link.name}
             href="#"
             className={`px-4 py-3 text-[11px] font-bold uppercase tracking-wide transition-colors duration-200 border-r border-white/10 last:border-0
-              ${link.active ? "bg-[#002147] text-white" : "text-white hover:bg-white/10"}`}
+              ${link.active ? 'bg-[#002147] text-white' : 'text-white hover:bg-white/10'}`}
           >
             {link.name}
           </a>
