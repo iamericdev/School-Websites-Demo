@@ -1,10 +1,16 @@
-
-import React from 'react';
-import { User } from 'lucide-react';
+import React from "react";
+import { User } from "lucide-react";
 
 export const Header: React.FC = () => {
   const navItems = [
-    'NEWS', 'EVENTS', 'ACADEMICS', 'RESEARCH', 'ALUMNI', 'CAMPUS LIFE', 'ADMISSION', 'ABOUT'
+    "NEWS",
+    "EVENTS",
+    "ACADEMICS",
+    "RESEARCH",
+    "ALUMNI",
+    "CAMPUS LIFE",
+    "ADMISSION",
+    "ABOUT",
   ];
 
   return (
@@ -18,8 +24,12 @@ export const Header: React.FC = () => {
             </svg>
           </div>
           <div className="flex flex-col">
-            <span className="text-[#a6192e] font-bold text-sm leading-tight tracking-tighter">American</span>
-            <span className="text-[#a6192e] font-bold text-sm leading-tight tracking-tighter">University</span>
+            <span className="text-[#a6192e] font-bold text-sm leading-tight tracking-tighter">
+              Brookside
+            </span>
+            <span className="text-[#a6192e] font-bold text-sm leading-tight tracking-tighter">
+              Academy
+            </span>
           </div>
         </div>
       </div>
